@@ -1,0 +1,21 @@
+@import './variables';
+
+.conclusion-indicator {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	pointer-events: none;
+
+	p {
+		font-size: 60px;
+		overflow: hidden;
+		color: white;
+
+		span {
+			display: inline-block;
+			position: relative;
+			transform: translateY(100%);
+		}
+	}
+}

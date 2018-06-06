@@ -1,0 +1,79 @@
+.panelContainer {
+  width: 295px;
+  height: 350px;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  opacity: 1;
+  transition: opacity .3s ease-out;
+
+  &.is-hidden {
+    opacity: 0;
+  }
+
+  .infoContainerWrapper {
+    overflow-y: hidden;
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+    .infoContainer {
+      transition: height 0.3s ease-in-out;
+      position: relative;
+      top: 100%;
+
+      div.info {
+        font-size: 16px;
+        font-family: westeindeThin;
+        margin-top: 20px;
+
+        div.row {
+          transition: height .3s ease-in-out, padding .3s ease-in-out;
+          background: linear-gradient(to right, black, transparent);
+          margin: 8px 0;
+          padding: 5px 5px;
+          color: white;
+          height: 0;
+          padding: 0 5px;
+
+          &.fill {
+            padding: 5px 5px 5px 8px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    height: 20%;
+    font-size: 15px;
+    color: #000000;
+    position: relative;
+    transform: translateY(30px);
+    font-family: poppins;
+    font-weight: bold;
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 1px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      background: black;
+    }
+
+    &.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

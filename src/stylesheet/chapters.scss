@@ -1,0 +1,20 @@
+.chapters-title {
+	width: 70%;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -54%);
+	position: absolute;
+	pointer-events: none;
+	text-align: center;
+
+	span {
+		display: inline-block;
+		font-family: westeindeThin;
+		font-size: 40px;
+		font-weight: lighter;
+		color: white;
+		transform: scale(.4);
+		opacity: 0;
+	}
+}
