@@ -5,41 +5,6 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "poppins";
-  src: url('../assets/interface/fonts/poppins/Poppins-Bold.ttf');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "brownBold";
-  src: url('../assets/interface/fonts/brownBold.otf');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "brownLight";
-  src: url('../assets/interface/fonts/brownLight.ttf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "westeindeBold";
-  src: url('../assets/interface/fonts/westeindeCaptionBold.otf');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "westeindeThin";
-  src: url('../assets/interface/fonts/westeindeCaptionThin.otf');
-  font-style: normal;
-  font-weight: light;
-}
-
 html, body {
   margin: 0;
   top:0;
@@ -49,16 +14,35 @@ html, body {
   width: 100%;
   height: 100%;
   position: relative;
-  font-family: helvetica, arial;
-  background: black;
-  font-size: 62.5%;
-  cursor: none;
+  background: #083a34;
+  color: white;
+  background-image: url(../assets/stp2.jpg);
+  background-size: 100% 100%;
 }
 
-p { margin: 0; }
+.menu { width: 50%; height: 80px; }
+.logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; }
+.burger { float: right; margin-right: 20px; line-height: 80px; }
+.burger img { width: 30px; }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-}
+.chapter-container { height: 100%; padding: 0px 100px 100px 100px; }
+
+.chapter-page-container { width: 50%; height: 100%; text-align: justify; }
+.chapter-page-leftContainer { float: left; background-color: #062b26; }
+.chapter-page-rightContainer { float: right; background-color: #083a34; }
+
+.chapter-page-text { line-height: 1.8rem; padding: 100px; }
+.firstLetter { font-size: 4rem; width: 40px; float: left; }
+.chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; }
+.chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
+
+.chapter-page-text-part { width : 44%; }
+.chapter-page-text-leftPart { float: left; }
+.chapter-page-text-rightPart { float: right; }
+
+.chapter-page-project { width: 250px; height: 150px; margin: 0px 0px 0px 53%; }
+.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 63%; }
+.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 4px; margin-top: 100px; }
+
+.statue { position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px; }
+.statue img { width: 400px; }
