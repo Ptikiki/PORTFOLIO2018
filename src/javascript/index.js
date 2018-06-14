@@ -1,4 +1,5 @@
 import Home from './classes/Home/index.js'
+import Chapter1 from './classes/Chapter1/index.js'
 
 window.Storage = {}
 Storage.CameraClasses = {}
@@ -10,4 +11,5 @@ initCanvas()
 
 function initCanvas() {
 	new Home()
+	new Chapter1()
 }

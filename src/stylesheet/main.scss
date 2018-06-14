@@ -32,7 +32,7 @@ html, body {
 .chapter-page-rightContainer { float: right; background-color: #083a34; }
 
 .chapter-page-text { line-height: 1.8rem; padding: 100px; }
-.firstLetter { font-size: 4rem; width: 40px; float: left; }
+.firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; /*border: solid red;*/ }
 .chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; }
 .chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
 

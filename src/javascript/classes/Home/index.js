@@ -1,17 +1,23 @@
-import Carousel from './Carousel.js'
+import ProjectsList from '../ProjectsList/index.js'
 
 class Home {
     constructor(options) {
-			Storage.HomeClass = this
+		Storage.HomeClass = this
 
-			this.init()
+		this.init()
     }
 
     init() {
-		}
+    	this.bind()
+	}
 
     bind = () => {
+    	document.querySelector('.burger').addEventListener('click', this.handleClick)
     }
+
+    handleClick = (event) => {
+		new ProjectsList()
+	}
 }
 
 export default Home
