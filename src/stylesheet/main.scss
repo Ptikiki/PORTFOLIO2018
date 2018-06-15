@@ -25,11 +25,11 @@ html, body {
 .burger { float: right; margin-right: 20px; line-height: 80px; }
 .burger img { width: 30px; }
 
-.chapter-container { height: 100%; padding: 0px 100px 100px 100px; }
+.container { height: 100%; padding: 0px 100px 100px 100px; }
 
-.chapter-page-container { width: 50%; height: 100%; text-align: justify; }
-.chapter-page-leftContainer { float: left; background-color: #062b26; }
-.chapter-page-rightContainer { float: right; background-color: #083a34; }
+.page-container { width: 50%; height: 100%; text-align: justify; }
+.page-leftContainer { float: left; background-color: #062b26; }
+.page-rightContainer { float: right; background-color: #083a34; }
 
 .chapter-page-text { line-height: 1.8rem; padding: 100px; }
 .firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; /*border: solid red;*/ }
@@ -37,12 +37,12 @@ html, body {
 .chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
 
 .chapter-page-text-part { width : 44%; }
-.chapter-page-text-leftPart { float: left; }
-.chapter-page-text-rightPart { float: right; }
+.chapter-page-firstText-leftPart { float: left; }
+.chapter-page-firstText-rightPart { float: right; }
 
-.chapter-page-project { width: 35%; height: 150px; margin: 0px 0px 0px 50%; }
-.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 60%; }
-.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 4px; margin-top: 100px; }
+.chapter-page-project { width: 36%; height: 150px; margin: 0px 0px 0px 50%; }
+.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 54%; }
+.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
 
 .statue { position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px; }
 .statue img { width: 400px; }

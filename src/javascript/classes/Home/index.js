@@ -1,4 +1,4 @@
-import ProjectsList from '../ProjectsList/index.js'
+import Projects from '../Projects/index.js'
 
 class Home {
     constructor(options) {
@@ -16,7 +16,7 @@ class Home {
     }
 
     handleClick = (event) => {
-		new ProjectsList()
+		new Projects({ type : "web" })
 	}
 }
 
