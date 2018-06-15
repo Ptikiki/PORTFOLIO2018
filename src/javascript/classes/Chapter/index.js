@@ -6,9 +6,6 @@ class Chapter {
 		Storage.ChapterClass = this
         this.chapterNumber = options.index
 
-        console.log(options.index)
-        console.log(this.chapterNumber)
-
         this.datas = Datas["chapter"+this.chapterNumber+""]
 
         this.title = document.querySelector('.chapter-page-title')
@@ -42,16 +39,10 @@ class Chapter {
     }
 
     bind = () => {
-    	document.querySelector('body').addEventListener('mousewheel', this.handleScroll)
-        this.chapterNumber === 1 ? document.querySelector('.chapter-page-leftProject').addEventListener('click', this.handleClick) : ''
+    	document.querySelector('.chapter-page-nextChapter-text').addEventListener('click', this.handleScroll)
     }
     unbind = () => {
-        document.querySelector('body').removeEventListener('mousewheel', this.handleScroll)
-        document.querySelector('.chapter-page-leftProject').removeEventListener('click', this.handleClick)
-    }
-
-    handleClick = (event) => {
-        new Projects({ type : "writing" })
+        document.querySelector('.chapter-page-nextChapter-text').removeEventListener('click', this.handleScroll)
     }
 
 	handleScroll = (event) => {

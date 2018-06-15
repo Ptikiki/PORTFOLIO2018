@@ -3,6 +3,12 @@
 .projectSelection { text-align: center; margin-top: 44vh; font-size: 2rem; }
 
 .projectsList {}
-.projectsList-project { border: solid white 0.2px; width : 39%; height: 130px; float: left; margin: 5%; }
-.projectsList-projectTitle { padding: 30px 0px 0px 30px; }
-.projectsList-projectDate { padding: 20px 0px 0px 50px; }
+.projectsList-project { border: solid white 0.2px; width : 39%; height: 130px; float: left; margin: 5%; cursor: pointer; }
+.projectsList-projectTitle { padding: 30px 0px 0px 30px; color: white }
+.projectsList-projectDate { padding: 20px 0px 0px 50px; color: #c9ab60; }
+
+.projectSelected { display: none; padding: 80px; text-align: left; }
+.projectSelected-projectTitle { font-size: 3rem; color: #c9ab60; }
+.projectSelected-projectDate { font-size: 2rem; }
+.projectSelected-projectRole { font-size: 1.8rem; margin-top: 5%; }
+.projectSelected-projectTechno { font-size: 1.5rem; margin-top: 5%; }

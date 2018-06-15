@@ -7,37 +7,27 @@ class Projects {
 		this.listType = options.type
 		this.datas = Datas[""+this.listType+"Projects"]
 
-		this.title = document.querySelector('.chapter-page-title')
-		this.subtitle = document.querySelector('.chapter-page-subtitle')
-        this.firstText = document.querySelector('.chapter-page-firstText')
-        this.secondText = document.querySelector('.chapter-page-secondText')
-        this.leftProject = document.querySelector('.chapter-page-leftProject')
-        this.rightProject = document.querySelector('.chapter-page-rightProject')
-
         this.projectSelection = document.querySelector('.projectSelection')
         this.projectsList = document.querySelector('.projectsList')
-        this.statue = document.querySelector('.statueImg')
+
+        this.projectSelected = document.querySelector('.projectSelected')
+        this.projectTitle = document.querySelector('.projectSelected-projectTitle')
+        this.projectDate = document.querySelector('.projectSelected-projectDate')
+        this.projectRole = document.querySelector('.projectSelected-projectRole')
+        this.projectTechno = document.querySelector('.projectSelected-projectTechno')
 
 		this.init()
     }
 
     init() {
-		this.title.style.display = "none"
-		this.subtitle.style.display = "none"
-        this.firstText.style.display = "none"
-        this.secondText.style.display = "none"
-        this.leftProject.style.display = "none"
-        this.rightProject.style.display = "none"
-
-        this.statue.src = ""
-        this.projectSelection.style.display = "block"
-        this.projectsList.style.display = "block"
-
+    	this.projectsList.innerHTML = ""
         this.createList()
 	}
 
 	createList = () => {
+		console.log("ADD PROJECTS")
 		let that = this 
+		this.listCreated = true
 
 		this.datas.forEach((project) => {
       		let newProject = document.createElement("div")
@@ -53,15 +43,17 @@ class Projects {
 
       		this.projectsList.appendChild(newProject).appendChild(newTitle).appendChild(newDate)  
 
-      		newProject.addEventListener('click', function(){ that.handleClick(project) })
+      		newProject.addEventListener('click', function(){ that.projectClicked(project) })
       	})
 	}
 
-    bind = () => {
-    }
-
-    handleClick = (project) => {
-        console.log(project)
+    projectClicked = (project) => {
+        this.projectSelection.style.display = "none"
+        this.projectSelected.style.display = "block"
+        this.projectTitle.innerHTML = project.title
+        this.projectDate.innerHTML = project.date
+        this.projectRole.innerHTML = project.role
+        this.projectTechno.innerHTML = project.techno
     }
 }
 

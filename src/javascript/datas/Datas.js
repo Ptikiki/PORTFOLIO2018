@@ -22,37 +22,37 @@ const webProjects = [
 	{
 		title : "MIRAGE!",
 		date : "2018",
-		role : "role",
-		techno : "techno",
-		description : "un super projet"
+		role : "Conception | Rédaction | Développement",
+		techno : "Three.js, Webpack, Github",
+		description : "Projet Gobelins"
 	},
 	{
 		title : "All Real",
 		date : "2017",
-		role : "role",
-		techno : "techno",
-		description : "un super projet"
+		role : "Conception | Développement",
+		techno : "Three.js, Webpack",
+		description : "Projet personnel"
 	},
 	{
 		title : "Arpegia",
 		date : "2017",
-		role : "role",
-		techno : "techno",
-		description : "un super projet"
+		role : "Conception | Développement",
+		techno : "Three.js, Webpack, Github",
+		description : "Projet Gobelins"
 	},
 	{
 		title : "SUM",
 		date : "2017",
-		role : "role",
-		techno : "techno",
-		description : "un super projet"
+		role : "Conception | Développement",
+		techno : "PIXI.JS, Webpack, Github",
+		description : "Projet Gobelins"
 	},
 	{
 		title : "Shakin'BOX",
 		date : "2016",
-		role : "role",
-		techno : "techno",
-		description : "un super projet"
+		role : "Chef de projet | Développeur",
+		techno : "Javascript",
+		description : "Projet MMI"
 	},
 	{
 		title : "Projet",

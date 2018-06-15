@@ -5,10 +5,20 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family:"SD Georgia Light";
+  src:url("../assets/interface/fonts/SD_Georgia_Light.eot?") 
+  format("eot"),url("../assets/interface/fonts/SD_Georgia_Light.woff") 
+  format("woff"),url("../assets/interface/fonts/SD_Georgia_Light.ttf") 
+  format("truetype"),url("../assets/interface/fonts/SD_Georgia_Light.svg#SDGeorgiaLight") 
+  format("svg");font-weight:normal;font-style:normal;
+}
+
 html, body {
   margin: 0;
   top:0;
   bottom:0;
+  font-family: "SD Georgia Light";
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
@@ -22,8 +32,10 @@ html, body {
 
 .menu { width: 50%; height: 80px; }
 .logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; }
-.burger { float: right; margin-right: 20px; line-height: 80px; }
+.burger { float: right; margin-right: 20px; line-height: 80px; cursor: pointer; }
 .burger img { width: 30px; }
+.cross { float: right; margin-right: 20px; line-height: 80px; display: none; cursor: pointer; }
+.cross img { width: 30px; }
 
 .container { height: 100%; padding: 0px 100px 100px 100px; }
 
@@ -31,18 +43,23 @@ html, body {
 .page-leftContainer { float: left; background-color: #062b26; }
 .page-rightContainer { float: right; background-color: #083a34; }
 
-.chapter-page-text { line-height: 1.8rem; padding: 100px; }
-.firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; /*border: solid red;*/ }
+.chapter-page-text { line-height: 1.8rem; padding: 100px 80px 100px 80px; }
+.firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; }
 .chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; }
 .chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
 
 .chapter-page-text-part { width : 44%; }
 .chapter-page-firstText-leftPart { float: left; }
 .chapter-page-firstText-rightPart { float: right; }
+.chapter-page-secondText { margin-left: 50px; }
 
-.chapter-page-project { width: 36%; height: 150px; margin: 0px 0px 0px 50%; }
+.chapter-page-project { width: 38%; height: 160px; margin: 0px 0px 0px 46%; }
 .chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 54%; }
 .chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
 
-.statue { position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px; }
-.statue img { width: 400px; }
+.chapter-page-nextChapter { padding-right: 100px; margin-left: 50%; }
+.chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
+.chapter-page-nextChapter-text { margin-top: 30px; margin-left: 60px; cursor: pointer; }
+
+.statue { position: absolute; left: 50%; transform: translateX(-52%); bottom: -50px; }
+.statue img { width: 700px; }
