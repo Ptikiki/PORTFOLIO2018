@@ -1,4 +1,6 @@
 import Projects from '../Projects/index.js'
+import anime from 'animejs'
+
 
 class Home {
     constructor(options) {
@@ -30,7 +32,15 @@ class Home {
         let that = this
 
         document.querySelector('.burger').addEventListener('click', function(){ that.projectsClicked("web") })
-        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ that.projectsClicked("writing") })
+        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ 
+            if (Storage.ChapterClass.chapterNumber === 1)  { that.projectsClicked("writing") }
+        })
+    }
+
+    unbind = () => {
+        let that = this
+        document.querySelector('.burger').removeEventListener('click', function(){ that.projectsClicked("web") })
+        document.querySelector('.chapter-page-leftProject').removeEventListener('click', function(){ that.projectsClicked("writing") })
     }
 
     projectsClicked = (projectType) => {
@@ -64,6 +74,16 @@ class Home {
             this.writingProjectsClicked = true
             this.webProjectsList = false
         }
+
+        document.querySelectorAll(".projectsList-project").forEach((project, index) => {
+            anime({
+                targets: project,
+                opacity: [0, 1],
+                duration: 600,
+                delay: index*150,
+                easing: 'linear'
+            })
+        })
 	}
 
     crossClicked = (event) => {
@@ -71,8 +91,9 @@ class Home {
 
         document.querySelector('.cross').removeEventListener('click', this.crossClicked)
         document.querySelector('.burger').addEventListener('click', function(){ that.projectsClicked("web") })
-        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ that.projectsClicked("writing") })
-
+        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ 
+            if (Storage.ChapterClass.chapterNumber === 1)  { that.projectsClicked("writing") }
+        })
         this.cross.style.display = "none"
         this.projectSelection.style.display = "none"
         this.projectsList.style.display = "none"

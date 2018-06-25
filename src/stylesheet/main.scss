@@ -53,13 +53,17 @@ html, body {
 .chapter-page-firstText-rightPart { float: right; }
 .chapter-page-secondText { margin-left: 50px; }
 
-.chapter-page-project { width: 38%; height: 160px; margin: 0px 0px 0px 46%; }
-.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 54%; }
+.chapter-page-project { width: 38%; height: 160px; margin: 0px 0px 0px 46%; cursor: pointer; text-align: center; }
+.chapter-page-project-title { padding: 35px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; font-size: 2.5rem; }
+.chapter-page-rightProject-title { font-size: 2.2rem; }
+.chapter-page-project-description { padding: 95px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; }
+
+.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 55%; transition: all 0.5s; }
 .chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
 
-.chapter-page-nextChapter { padding-right: 100px; margin-left: 50%; }
+.chapter-page-nextChapter { margin-left: 50%; }
 .chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
-.chapter-page-nextChapter-text { margin-top: 30px; margin-left: 60px; cursor: pointer; }
+.chapter-page-nextChapter-text { margin-top: 30px; cursor: pointer; width: 200px; text-align: center; }
 
-.statue { position: absolute; left: 50%; transform: translateX(-52%); bottom: -50px; }
-.statue img { width: 700px; }
+.statue { position: absolute; left: 50%; transform: translateX(-55%); bottom: -50px; }
+.statue img { width: 240px; height: auto; }

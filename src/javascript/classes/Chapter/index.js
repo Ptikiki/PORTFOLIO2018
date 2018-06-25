@@ -1,10 +1,13 @@
 import Datas from '../../datas/Datas.js'
 import Projects from '../Projects/index.js'
+import anime from 'animejs'
+
 
 class Chapter {
     constructor(options) {
 		Storage.ChapterClass = this
         this.chapterNumber = options.index
+        this.nextChapterNumber = options.nextChapter
 
         this.datas = Datas["chapter"+this.chapterNumber+""]
 
@@ -12,11 +15,14 @@ class Chapter {
         this.firstLetter = document.querySelector('.firstLetter')
         this.firstTextLeftPart = document.querySelector('.followingLetters')
         this.firstTextRightPart = document.querySelector('.chapter-page-firstText-rightPart')
-        this.leftProject = document.querySelector('.chapter-page-leftProject')
+        this.leftProjectTitle = document.querySelector('.chapter-page-leftProject-title')
+        this.leftProjectDescription = document.querySelector('.chapter-page-leftProject-description')
         this.subtitle = document.querySelector('.chapter-page-subtitle')
         this.secondText = document.querySelector('.chapter-page-secondText')
-        this.rightProject = document.querySelector('.chapter-page-rightProject')
+        this.rightProjectTitle = document.querySelector('.chapter-page-rightProject-title')
+        this.rightProjectDescription = document.querySelector('.chapter-page-rightProject-description')        
         this.statue = document.querySelector('.statueImg')
+        this.nextChapter = document.querySelector('.chapter-page-nextChapter-text')
 
 		this.init()
     }
@@ -31,24 +37,64 @@ class Chapter {
         this.firstLetter.innerHTML = this.datas.firstLetter
         this.firstTextLeftPart.innerHTML = this.datas.firstTextLeftPart
         this.firstTextRightPart.innerHTML = this.datas.firstTextRightPart
-        //this.leftProject.innerHTML = this.datas.leftProject
+        this.leftProjectTitle.innerHTML = this.datas.leftProjectTitle
+        this.leftProjectDescription.innerHTML = this.datas.leftProjectDescription
         this.subtitle.innerHTML = this.datas.subtitle
         this.secondText.innerHTML = this.datas.secondText
-        //this.rightProject.innerHTML = this.datas.rightProject
+        this.rightProjectTitle.innerHTML = this.datas.rightProjectTitle
+        this.rightProjectDescription.innerHTML = this.datas.rightProjectDescription
         this.statue.src = this.datas.statue
+        this.nextChapter.innerHTML = this.datas.nextChapter
     }
 
     bind = () => {
-    	document.querySelector('.chapter-page-nextChapter-text').addEventListener('click', this.handleScroll)
+        this.nextChapter.addEventListener('click', this.nextChapterClick)
+        document.querySelector(".chapter-page-leftProject").addEventListener('mouseover', this.leftProjectOver)
+    	document.querySelector(".chapter-page-rightProject").addEventListener('mouseover', this.rightProjectOver)
     }
     unbind = () => {
-        document.querySelector('.chapter-page-nextChapter-text').removeEventListener('click', this.handleScroll)
+        this.nextChapter.removeEventListener('click', this.nextChapterClick)
     }
 
-	handleScroll = (event) => {
+	nextChapterClick = (event) => {
         this.unbind()
-		new Chapter({ index: this.chapterNumber+1 })
+		new Chapter({ index: this.nextChapterNumber, nextChapter: this.chapterNumber })
 	}
+
+    leftProjectOver = (event) => {
+        document.querySelector(".chapter-page-leftProject").removeEventListener('mouseover', this.leftProjectOver)
+        anime({
+            targets: this.leftProjectTitle,
+            opacity: [0, 1],
+            left: ['32%', '25%'],
+            duration: 800,
+            easing: 'linear'
+        })
+        anime({
+            targets: this.leftProjectDescription,
+            opacity: [0, 1],
+            left: ['15%', '20%'],
+            duration: 800,
+            easing: 'linear'
+        })
+    }
+    rightProjectOver = (event) => {
+        document.querySelector(".chapter-page-rightProject").removeEventListener('mouseover', this.rightProjectOver)
+        anime({
+            targets: this.rightProjectTitle,
+            opacity: [0, 1],
+            left: ['53%', '58%'],
+            duration: 800,
+            easing: 'linear'
+        })
+        anime({
+            targets: this.rightProjectDescription,
+            opacity: [0, 1],
+            left: ['85%', '80%'],
+            duration: 800,
+            easing: 'linear'
+        })
+    }
 
 }
 

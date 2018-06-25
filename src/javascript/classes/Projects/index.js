@@ -1,4 +1,5 @@
 import Datas from '../../datas/Datas.js'
+import anime from 'animejs'
 
 class Projects {
     constructor(options) {
@@ -15,13 +16,14 @@ class Projects {
         this.projectDate = document.querySelector('.projectSelected-projectDate')
         this.projectRole = document.querySelector('.projectSelected-projectRole')
         this.projectTechno = document.querySelector('.projectSelected-projectTechno')
+        this.projectDescription = document.querySelector('.projectSelected-projectDescription')
 
 		this.init()
     }
 
     init() {
     	this.projectsList.innerHTML = ""
-        this.createList()
+      this.createList()
 	}
 
 	createList = () => {
@@ -43,17 +45,30 @@ class Projects {
 
       		this.projectsList.appendChild(newProject).appendChild(newTitle).appendChild(newDate)  
 
-      		newProject.addEventListener('click', function(){ that.projectClicked(project) })
+      		newProject.addEventListener('mouseover', function(){ that.projectOver(project) })
       	})
 	}
 
-    projectClicked = (project) => {
-        this.projectSelection.style.display = "none"
-        this.projectSelected.style.display = "block"
-        this.projectTitle.innerHTML = project.title
-        this.projectDate.innerHTML = project.date
-        this.projectRole.innerHTML = project.role
-        this.projectTechno.innerHTML = project.techno
+    projectOver = (project) => {
+      console.log(event.target)
+
+      this.projectSelection.style.display = "none"
+      this.projectSelected.style.display = "block"
+      project.title != undefined ? this.projectTitle.innerHTML = project.title : this.projectTitle.innerHTML = ''
+      project.date != undefined ? this.projectDate.innerHTML = project.date : this.projectDate.innerHTML = ''
+      project.role != undefined ? this.projectRole.innerHTML = project.role : this.projectRole.innerHTML = ''
+      project.techno != undefined ? this.projectTechno.innerHTML = project.techno : this.projectTechno.innerHTML = ''
+      project.description != undefined ? this.projectDescription.innerHTML = project.description : this.projectDescription.innerHTML = ''
+
+      if ( this.oldProjectSelected != project ) {
+        this.oldProjectSelected = project
+        anime({
+          targets: this.projectSelected,
+          opacity: [0, 1],
+          duration: 600,
+          easing: 'linear'
+        })
+      }
     }
 }
 

@@ -3,12 +3,13 @@
 .projectSelection { text-align: center; margin-top: 44vh; font-size: 2rem; }
 
 .projectsList {}
-.projectsList-project { border: solid white 0.2px; width : 39%; height: 130px; float: left; margin: 5%; cursor: pointer; }
-.projectsList-projectTitle { padding: 30px 0px 0px 30px; color: white }
-.projectsList-projectDate { padding: 20px 0px 0px 50px; color: #c9ab60; }
+.projectsList-project { border: solid #062b26 0.2px; width : 39%; height: 130px; float: left; margin: 5%; cursor: pointer; }
+.projectsList-projectTitle { padding: 20px 20px 0px 20px; color: white; font-size: 1.4rem; }
+.projectsList-projectDate { padding: 10px 0px 0px 110px; color: #c9ab60; font-size: 1.2rem; }
 
 .projectSelected { display: none; padding: 80px; text-align: left; }
 .projectSelected-projectTitle { font-size: 3rem; color: #c9ab60; }
 .projectSelected-projectDate { font-size: 2rem; }
 .projectSelected-projectRole { font-size: 1.8rem; margin-top: 5%; }
 .projectSelected-projectTechno { font-size: 1.5rem; margin-top: 5%; }
+.projectSelected-projectDescription { font-size: 1.1rem; line-height: 30px; margin-top: 10%; text-align: justify; overflow-y: auto; height: 750px; width: 100%; }
