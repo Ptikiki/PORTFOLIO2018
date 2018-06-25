@@ -28,6 +28,7 @@ html, body {
   color: white;
   background-image: url(../assets/stp2.jpg);
   background-size: 100% 100%;
+  font-size: 90%;
 }
 
 .menu { width: 50%; height: 80px; }
@@ -37,33 +38,33 @@ html, body {
 .cross { float: right; margin-right: 20px; line-height: 80px; display: none; cursor: pointer; }
 .cross img { width: 30px; }
 
-.container { height: 100%; padding: 0px 100px 100px 100px; }
+.container { height: 100%; padding: 0px 7% 7% 7%; }
 
 .page-container { width: 50%; height: 100%; text-align: justify; }
 .page-leftContainer { float: left; background-color: #062b26; }
 .page-rightContainer { float: right; background-color: #083a34; }
 
-.chapter-page-text { line-height: 1.8rem; padding: 100px 80px 100px 80px; }
+.chapter-page-text { line-height: 1.8rem; padding: 12% 10% 12% 10%; }
 .firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; }
-.chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; }
-.chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
+.chapter-page-title { font-size: 3.5rem; line-height: 3.5rem; text-align: center; color: #c9ab60; padding: 13% 13% 0px 13%; }
+.chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 15% 13% 0px 13%; }
 
 .chapter-page-text-part { width : 44%; }
 .chapter-page-firstText-leftPart { float: left; }
 .chapter-page-firstText-rightPart { float: right; }
 .chapter-page-secondText { margin-left: 50px; }
 
-.chapter-page-project { width: 38%; height: 160px; margin: 0px 0px 0px 46%; cursor: pointer; text-align: center; }
+.chapter-page-project { width: 38%; height: 20%; margin: 0px 0px 0px 46%; cursor: pointer; text-align: center; }
 .chapter-page-project-title { padding: 35px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; font-size: 2.5rem; }
 .chapter-page-rightProject-title { font-size: 2.2rem; }
 .chapter-page-project-description { padding: 95px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; }
 
-.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 55%; transition: all 0.5s; }
-.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
+.chapter-page-leftProject { background-color: #083a34; margin-top: 30%; margin-left: 57%; transition: all 0.5s; }
+.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 10%; }
 
 .chapter-page-nextChapter { margin-left: 50%; }
 .chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
-.chapter-page-nextChapter-text { margin-top: 30px; cursor: pointer; width: 200px; text-align: center; }
+.chapter-page-nextChapter-text { margin-top: 9%; cursor: pointer; width: 200px; text-align: center; }
 
 .statue { position: absolute; left: 50%; transform: translateX(-55%); bottom: -50px; }
-.statue img { width: 240px; height: auto; }
+.statue img { width: 110%; height: auto; }
