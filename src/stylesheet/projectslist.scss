@@ -12,4 +12,33 @@
 .projectSelected-projectDate { font-size: 2rem; }
 .projectSelected-projectRole { font-size: 1.8rem; margin-top: 5%; }
 .projectSelected-projectTechno { font-size: 1.5rem; margin-top: 5%; }
-.projectSelected-projectDescription { font-size: 1.1rem; line-height: 30px; margin-top: 10%; text-align: justify; overflow-y: auto; height: 750px; width: 100%; }
+.projectSelected-projectDescription { font-size: 1.1rem; line-height: 30px; margin-top: 10%; text-align: justify; overflow-y: auto; height: 60vh; width: 100%; }
+
+@media screen and (max-width: 1600px), screen and (max-height: 900px) {
+/*	body { border: solid red; }
+*/	.projectSelected { padding: 60px; }
+	.projectSelected-projectTitle { font-size: 2.6rem; color: #c9ab60; }
+	.projectSelected-projectDate { font-size: 1.6rem; }
+	.projectSelected-projectRole { font-size: 1.4rem;  }
+	.projectSelected-projectTechno { font-size: 1.2rem;  }
+	.projectSelected-projectDescription { font-size: 1rem; height: 55vh; }
+}
+
+@media screen and (max-width: 1000px), screen and (max-height: 740px) {
+/*  	body { border: solid blue; }
+*/    .projectSelected { padding: 50px; }
+	.projectSelected-projectTitle { font-size: 2.4rem; color: #c9ab60; }
+	.projectSelected-projectDate { font-size: 1.4rem; }
+	.projectSelected-projectRole { font-size: 1.2rem;  }
+	.projectSelected-projectTechno { font-size: 1.1rem;  }
+}
+
+@media screen and (max-height: 740px) {
+	.projectSelected-projectDescription { height: 50vh; }
+}
+@media screen and (max-height: 640px) {
+	.projectSelected-projectDescription { height: 45vh; }
+}
+@media screen and (max-height: 560px) {
+	.projectSelected-projectDescription { height: 35vh; }
+}

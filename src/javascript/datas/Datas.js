@@ -22,7 +22,7 @@ const chapter2 = {
 	leftProjectDescription: "Future description",
 	subtitle: "Cette formation à Gobelins s’est déroulée en parallèle de mon alternance à AXA France, où j’ai participé à deux projets phares.",
 	secondText: "J’ai d’abord développé un système de visite virtuelle en 3D, permettant aux clients d’AXA de visiter fictivement nos agences. <br>On m’a ensuite chargée du développement d’un Serious Game adressé aux collaborateurs d’AXA et d’autres entreprises. Il s’agit d’une simulation 2D à choix libres sur la thématique de l’intéressement. Ce jeu permet de vivre différentes situations provoquées par l’utilisateur, qui décide d’épargner ou non, de consommer ou non, de faire des projets ou non.",
-	rightProjectTitle: "Advgergame",
+	rightProjectTitle: "Advergame",
 	rightProjectDescription: "Future description",	
 	statue: "assets/statue.png",
 	nextChapter: "Chapitre I"
