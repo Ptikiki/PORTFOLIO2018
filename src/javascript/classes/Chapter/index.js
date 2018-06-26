@@ -45,6 +45,11 @@ class Chapter {
         this.rightProjectDescription.innerHTML = this.datas.rightProjectDescription
         this.statue.src = this.datas.statue
         this.nextChapter.innerHTML = this.datas.nextChapter
+
+        this.leftProjectTitle.style.opacity = 0
+        this.leftProjectDescription.style.opacity = 0
+        this.rightProjectTitle.style.opacity = 0
+        this.rightProjectDescription.style.opacity = 0
     }
 
     bind = () => {
@@ -66,31 +71,42 @@ class Chapter {
         anime({
             targets: this.leftProjectTitle,
             opacity: [0, 1],
-            left: ['32%', '25%'],
+            left: ['33%', '28%'],
             duration: 800,
             easing: 'linear'
         })
         anime({
             targets: this.leftProjectDescription,
             opacity: [0, 1],
-            left: ['15%', '20%'],
+            left: ['18%', '23%'],
             duration: 800,
             easing: 'linear'
         })
     }
     rightProjectOver = (event) => {
         document.querySelector(".chapter-page-rightProject").removeEventListener('mouseover', this.rightProjectOver)
-        anime({
-            targets: this.rightProjectTitle,
-            opacity: [0, 1],
-            left: ['53%', '58%'],
-            duration: 800,
-            easing: 'linear'
-        })
+        if (this.chapterNumber === 1) {
+            anime({
+                targets: this.rightProjectTitle,
+                opacity: [0, 1],
+                left: ['55%', '60%'],
+                duration: 800,
+                easing: 'linear'
+            })
+        }
+        else if (this.chapterNumber === 2) {
+            anime({
+                targets: this.rightProjectTitle,
+                opacity: [0, 1],
+                left: ['67%', '72%'],
+                duration: 800,
+                easing: 'linear'
+            })
+        }
         anime({
             targets: this.rightProjectDescription,
             opacity: [0, 1],
-            left: ['85%', '80%'],
+            left: ['83%', '78%'],
             duration: 800,
             easing: 'linear'
         })

@@ -1,29 +1,29 @@
 const chapter1 = {
 	title: "Chapitre 1 <br> Passions",
-	firstLetter: "L'",
-	firstTextLeftPart: "apprentissage de l’écriture - au plus jeune âge donc - m’a très vite ouvert un nouvel horizon, et offert ma première passion. J’étais désormais capable d’immortaliser sur le papier les histoires qui se construisaient dans ma tête.",
+	firstLetter: "A",
+	firstTextLeftPart: "u plus jeune âge, l'apprentissage de l'écriture m’a rapidement ouvert un nouvel horizon, et offert ma première passion. J’étais désormais capable d’immortaliser et partager sur le papier les histoires qui se construisaient dans ma tête.",
 	firstTextRightPart: "J’ai ainsi produit plusieurs écrits, des contes aux poèmes, en passant par un roman historique toujours en projet.",
 	leftProjectTitle: "Mes écrits",
 	leftProjectDescription: "Contes, poèmes, romans...",
 	subtitle: "En grandissant, j’ai développé une grande fascination pour l’Histoire de France, et certains de ses événements en particulier.",
 	secondText: "Le mythe du château de Versailles en fait partie, par la majestuosité du bâtiment et la singularité des intrigues qui s’y sont déroulées. J’avais donc à coeur de réaliser une première ébauche de projet exposant la beauté du lieu, et notamment celle des jardins du palais.",
 	rightProjectTitle: "Les jardins de Versailles",
-	rightProjectDescription: "Future description",
+	rightProjectDescription: "Visite virtuelle",
 	statue: "assets/statue.png",
 	nextChapter: "Chapitre II"
 }
 
 const chapter2 = {
-	title: "Chapitre 2 <br> Formation et projets",
+	title: "Chapitre 2 <br> Cursus",
 	firstLetter: "A",
-	firstTextLeftPart: "u cours de ce DUT MMI, ou Métiers du Multimédia et de l’Internet, j’ai développé mes premières compétences dans le web, et notamment en développement et management. La réalisation de l’application Shakin’BOX avec un groupe de 6 personnes m’a permis de mettre en application ces compétences dans un projet concret et professionnalisant.",
-	firstTextRightPart: "J’ai poursuivi mes études à l’Ecole des Gobelins, en Bachelor Développement et Design Intercatif, Option Développement. Cette formation a été fondamentale dans mon parcours puisque c’est grâce à elle que mes compétences en développement se sont largement enrichies et précisées.",
-	leftProjectTitle: "MIRAGE !",
-	leftProjectDescription: "Future description",
-	subtitle: "Cette formation à Gobelins s’est déroulée en parallèle de mon alternance à AXA France, où j’ai participé à deux projets phares.",
-	secondText: "J’ai d’abord développé un système de visite virtuelle en 3D, permettant aux clients d’AXA de visiter fictivement nos agences. <br>On m’a ensuite chargée du développement d’un Serious Game adressé aux collaborateurs d’AXA et d’autres entreprises. Il s’agit d’une simulation 2D à choix libres sur la thématique de l’intéressement. Ce jeu permet de vivre différentes situations provoquées par l’utilisateur, qui décide d’épargner ou non, de consommer ou non, de faire des projets ou non.",
-	rightProjectTitle: "Advergame",
-	rightProjectDescription: "Future description",	
+	firstTextLeftPart: "près obtention d'un bac scientifique, je me suis orientée vers un DUT MMI, ou Métiers du Multimédia et de l’Internet. ",
+	firstTextRightPart: "C'est alors que j’ai développé mes premières compétences dans le web, et notamment en développement et management grâce à des projets d'équipe concrets et professionnalisants.",
+	leftProjectTitle: "Shakin'BOX",
+	leftProjectDescription: "Application mobile",
+	subtitle: "Ma passion pour la culture et la découverte du monde du multimédia m'ont ainsi offert mon projet professionnel actuel : travailler à la mise en oeuvre de dispositifs culturels immersifs qui placent l'utilisateur au coeur de son expérience.",
+	secondText: "Le bachelor puis le mastère en développement et design interactif proposés par l'Ecole des Gobelins constituaient ainsi le cursus idéal pour moi. J'y ai réalisé plusieurs projets pour lesquels j'avais en charge la conception/rédaction des contenus et le développement.",
+	rightProjectTitle: "MIRAGE !",
+	rightProjectDescription: "Expérience immersive & interactive",	
 	statue: "assets/statue.png",
 	nextChapter: "Chapitre I"
 }
@@ -60,7 +60,7 @@ const webProjects = [
 	{
 		title : "Shakin'BOX",
 		date : "2016",
-		role : "Chef de projet | Développeur",
+		role : "Chef de projet | Rédactrice | Développeuse",
 		techno : "Javascript",
 		description : "Projet MMI"
 	},
