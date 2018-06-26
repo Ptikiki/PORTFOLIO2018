@@ -55,15 +55,42 @@ html, body {
 
 .chapter-page-project { width: 38%; height: 160px; margin: 0px 0px 0px 46%; cursor: pointer; text-align: center; }
 .chapter-page-project-title { padding: 35px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; font-size: 2.5rem; }
-.chapter-page-rightProject-title { font-size: 2.2rem; }
 .chapter-page-project-description { padding: 95px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; }
 
-.chapter-page-leftProject { background-color: #083a34; margin-top: 250px; margin-left: 55%; transition: all 0.5s; }
+.chapter-page-leftProject { background-color: #083a34; margin-top: 190px; margin-left: 58%; transition: all 0.5s; }
+
 .chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
+.chapter-page-rightProject-title { font-size: 2.2rem; }
 
 .chapter-page-nextChapter { margin-left: 50%; }
 .chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
 .chapter-page-nextChapter-text { margin-top: 30px; cursor: pointer; width: 200px; text-align: center; }
 
 .statue { position: absolute; left: 50%; transform: translateX(-55%); bottom: -50px; }
-.statue img { width: 240px; height: auto; }
+.statue img { width: 120%; height: auto; }
+
+@media screen and (max-width: 1600px), screen and (max-height: 900px) {
+/*  body { border: solid red; }
+*/  .menu { height: 60px; }
+  .logo { margin-left: 100px; font-size: 2.5rem; line-height: 60px; }
+  .container { padding: 0px 5% 10% 5%; }
+  .chapter-page-text { line-height: 1.6rem; padding: 10% 10% 10% 10%; }
+  .chapter-page-title { font-size: 3.5rem; line-height: 3.5rem; padding: 10% 10% 0px 10%; }
+  .chapter-page-subtitle { font-size: 1.2rem; line-height: 1.8rem; padding: 10% 10% 0px 10%; }
+  .chapter-page-project-title { font-size: 2rem; }
+  .chapter-page-rightProject-title { font-size: 1.8rem; }
+  .chapter-page-leftProject { margin-top: 160px; }
+  .chapter-page-rightProject { margin-top: 60px; }
+  .statue img { width: 110%; }
+}
+
+@media screen and (max-width: 1000px), screen and (max-height: 740px) {
+/*  body { border: solid blue; }
+*/  .chapter-page-text { font-size: 1rem; line-height: 1.4rem; padding: 8% 8% 8% 8%; }
+  .chapter-page-title { font-size: 3.2rem; line-height: 3.2rem; padding: 8% 8% 0px 8%; }
+  .chapter-page-subtitle { padding: 8% 8% 0px 8%; }
+  .chapter-page-project-title { font-size: 1.8rem; }
+  .chapter-page-rightProject-title { font-size: 1.6rem; }
+  .statue img { width: 100%; }
+
+}
