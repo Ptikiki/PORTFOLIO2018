@@ -81,15 +81,15 @@ html, body {
 .chapter-page-rightProject-title { font-size: 2.2rem; }
 
 .chapter-page-nextChapter { margin-left: 50%; }
-.chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
+.chapter-page-nextChapter-bar { border: solid white 0.5px; width: 200px; }
 .chapter-page-nextChapter-text { margin-top: 25px; cursor: pointer; width: 200px; text-align: center; }
 
-.statue { position: absolute; left: 50%; transform: translateX(-60%); bottom: -50px; }
+.statue { position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px; }
 .statue img { width: 120%; height: auto; }
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
-  body { border: solid red; }
-  
+/*  body { border: solid red; }
+*/  
   .biggerSubtitle { font-size: 1.6rem; }
   .biggerText { font-size: 1.3rem; }
   .menu { height: 70px; }
@@ -106,8 +106,8 @@ html, body {
 }
 
 @media screen and (max-width: 1250px), screen and (max-height: 840px) {
-  body { border: solid blue; }
-  
+/*  body { border: solid blue; }
+*/  
   .biggerSubtitle { font-size: 1.3rem; }
   .biggerText { font-size: 1.1rem; }
   .chapter-page-text { font-size: 0.8rem; line-height: 1.3rem; padding: 7% 7% 7% 7%; }
