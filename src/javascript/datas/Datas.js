@@ -92,13 +92,13 @@ const writingProjects = [
 		title : "Atriarcat",
 		date : "2018",
 		techno : "Poème",
-		description : "un super projet"
+		description : "Etrange la folle<br>Comme les autres<br>Pauvre, son idole<br>Devient apôtre<br><br>Beaux sentiments<br>Et peur du vide<br>Font-ils semblant ?<br>Bons coeurs arides<br><br>Identité<br>Trop demandeuse<br>Est-elle piégée ?<br>Trop amoureuse"
 	},
 	{
 		title : "L'Initiée du Merle",
 		date : "2017",
 		techno : "Poème",
-		description : "un super projet"
+		description : "A vous auxquels je parle<br>Suite aux larmes, à celle qui perla<br>Naïve, après tentative du marle<br>Initiée du savoir que le merl a<br><br>A votre tour m’avez vaincue<br>Par sagesse ou vantardise<br>Je n’ai pas lutté, vous ai crus<br>Sans savoir sur qui je mise<br><br>A vos armes êtes perchés<br>Des valeurs aux mensonges<br>Comme l’oiseau qui songe<br>Sur quelle branche nicher"
 	},
 	{
 		title : "L'Enfant de l'Abbaye (n°2)",
