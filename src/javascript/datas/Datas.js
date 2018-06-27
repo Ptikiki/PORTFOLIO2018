@@ -26,7 +26,7 @@ const chapter2 = {
 	subtitle: "Ma passion pour la culture et la découverte du monde du multimédia m'ont ainsi offert mon projet professionnel actuel : travailler à la mise en oeuvre de <span class='biggerSubtitle normalWeight'>dispositifs culturels immersifs</span> qui placent l'utilisateur au coeur de son expérience.",
 	secondText: "Le mastère en développement et design interactif proposé par <span class='biggerText normalWeight'>l'Ecole des Gobelins</span> constituait ainsi le cursus idéal pour moi. J'y ai réalisé plusieurs projets pour lesquels j'avais en charge la <span class='biggerText normalWeight'>conception/rédaction</span> des contenus et le développement.",
 	rightProjectTitle: "MIRAGE !",
-	rightProjectDescription: "Expérience immersive & interactive",	
+	rightProjectDescription: "Expérience immersive",	
 	rightProjectImg: "url('../assets/mirage.jpg')",
 	statue: "assets/statue.png",
 	nextChapter: "Chapitre I"
