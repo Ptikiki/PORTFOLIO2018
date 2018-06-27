@@ -17,6 +17,7 @@ class Projects {
         this.projectRole = document.querySelector('.projectSelected-projectRole')
         this.projectTechno = document.querySelector('.projectSelected-projectTechno')
         this.projectDescription = document.querySelector('.projectSelected-projectDescription')
+        this.projectLink = document.querySelector('.projectSelected-projectLink')
 
 		this.init()
     }
@@ -59,6 +60,7 @@ class Projects {
       project.role != undefined ? this.projectRole.innerHTML = project.role : this.projectRole.innerHTML = ''
       project.techno != undefined ? this.projectTechno.innerHTML = project.techno : this.projectTechno.innerHTML = ''
       project.description != undefined ? this.projectDescription.innerHTML = project.description : this.projectDescription.innerHTML = ''
+      project.link != undefined ? this.projectLink.innerHTML = project.link : this.projectLink.innerHTML = ''
 
       if ( this.oldProjectSelected != project ) {
         this.oldProjectSelected = project

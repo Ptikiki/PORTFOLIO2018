@@ -18,7 +18,9 @@ html, body {
   margin: 0;
   top:0;
   bottom:0;
-  font-family: "SD Georgia Light";
+  font-family : "Helvetica Neue"; 
+  font-weight: lighter;
+  letter-spacing: 2px;
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
@@ -30,8 +32,12 @@ html, body {
   background-size: 100% 100%;
 }
 
+.normalWeight { font-weight: normal; }
+.biggerSubtitle { font-size: 2rem; color: #c9ab60; }
+.biggerText { font-size: 1.4rem; }
+
 .menu { width: 50%; height: 80px; }
-.logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; }
+.logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; font-family: "SD Georgia Light"; }
 .burger { float: right; margin-right: 20px; line-height: 80px; cursor: pointer; }
 .burger img { width: 30px; }
 .cross { float: right; margin-right: 20px; line-height: 80px; display: none; cursor: pointer; }
@@ -43,9 +49,9 @@ html, body {
 .page-leftContainer { float: left; background-color: #062b26; }
 .page-rightContainer { float: right; background-color: #083a34; }
 
-.chapter-page-text { line-height: 1.8rem; padding: 100px 80px 100px 80px; }
-.firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; }
-.chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; }
+.chapter-page-text { line-height: 1.8rem; padding: 100px 80px 100px 80px;  }
+.firstLetter { font-size: 4rem; width: 60px; height: 40px; margin-top: 10px; float: left; font-family: "SD Georgia Light"; }
+.chapter-page-title { font-size: 4rem; line-height: 4rem; text-align: center; color: #c9ab60; padding: 100px 100px 0px 100px; font-family: "SD Georgia Light"; letter-spacing: 0.5px; }
 .chapter-page-subtitle { font-size: 1.4rem; line-height: 2.2rem; text-align: right; padding: 100px 100px 0px 100px; }
 
 .chapter-page-text-part { width : 44%; }
@@ -57,9 +63,9 @@ html, body {
 .chapter-page-project-title { padding: 35px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; font-size: 2.5rem; }
 .chapter-page-project-description { padding: 95px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; }
 
-.chapter-page-leftProject { background-color: #083a34; margin-top: 190px; margin-left: 58%; transition: all 0.5s; }
+.chapter-page-leftProject { background-color: #083a34; background-image: url('../assets/mirage.jpg'); background-size: cover; margin-top: 190px; margin-left: 58%; transition: all 0.5s; }
 
-.chapter-page-rightProject { background-color: #062b26; border-left: solid #c9ab60 5px; margin-top: 100px; }
+.chapter-page-rightProject { background-color: #062b26; background-image: url('../assets/mirage2.jpg'); background-size: cover; border-left: solid #c9ab60 5px; margin-top: 100px; }
 .chapter-page-rightProject-title { font-size: 2.2rem; }
 
 .chapter-page-nextChapter { margin-left: 50%; }
@@ -71,7 +77,10 @@ html, body {
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
 /*  body { border: solid red; }
-*/  .menu { height: 60px; }
+*/  
+  .biggerSubtitle { font-size: 1.8rem; }
+  .biggerText { font-size: 1.3rem; }
+  .menu { height: 60px; }
   .logo { margin-left: 100px; font-size: 2.5rem; line-height: 60px; }
   .container { padding: 0px 5% 10% 5%; }
   .chapter-page-text { line-height: 1.6rem; padding: 10% 10% 10% 10%; }
@@ -86,7 +95,10 @@ html, body {
 
 @media screen and (max-width: 1000px), screen and (max-height: 740px) {
 /*  body { border: solid blue; }
-*/  .chapter-page-text { font-size: 1rem; line-height: 1.4rem; padding: 8% 8% 8% 8%; }
+*/  
+  .biggerSubtitle { font-size: 1.6rem; }
+  .biggerText { font-size: 1.1rem; }
+  .chapter-page-text { font-size: 1rem; line-height: 1.4rem; padding: 8% 8% 8% 8%; }
   .chapter-page-title { font-size: 3.2rem; line-height: 3.2rem; padding: 8% 8% 0px 8%; }
   .chapter-page-subtitle { padding: 8% 8% 0px 8%; }
   .chapter-page-project-title { font-size: 1.8rem; }
