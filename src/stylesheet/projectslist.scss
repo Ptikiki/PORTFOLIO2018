@@ -3,17 +3,21 @@
 .projectSelection { text-align: center; margin-top: 44vh; font-size: 2rem; }
 
 .projectsList {}
-.projectsList-project { border: solid #062b26 0.2px; width : 39%; height: 130px; float: left; margin: 5%; cursor: pointer; }
+.projectsList-project { border: solid #062b26 0.2px; width : 39%; height: 130px; float: left; margin: 5%; cursor: pointer; background-size: cover; }
 .projectsList-projectTitle { padding: 20px 20px 0px 20px; color: white; font-size: 1.4rem; }
 .projectsList-projectDate { padding: 10px 0px 0px 110px; color: #c9ab60; font-size: 1.2rem; }
 
-.projectSelected { display: none; padding: 80px; text-align: left; }
+.projectSelected { display: none; padding: 80px; text-align: left; background-size: cover; }
 .projectSelected-projectTitle { font-size: 3rem; color: #c9ab60; }
 .projectSelected-projectDate { font-size: 2rem; }
 .projectSelected-projectRole { font-size: 1.8rem; margin-top: 5%; }
 .projectSelected-projectTechno { font-size: 1.5rem; margin-top: 5%; }
 .projectSelected-projectLink { font-size: 1.1rem; margin-top: 5%; color: #c9ab60; }
 .projectSelected-projectDescription { font-size: 1.1rem; line-height: 30px; margin-top: 10%; text-align: justify; overflow-y: auto; height: 60vh; width: 100%; }
+.projectSelected-projectDescription::-webkit-scrollbar, {
+  width: 0px; 
+  background: transparent;
+}
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
 /*	body { border: solid red; }

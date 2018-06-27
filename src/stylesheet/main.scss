@@ -1,5 +1,11 @@
 @font-face {
-  font-family: "poppins";
+  font-family: "PoppinsLight";
+  src: url('../assets/interface/fonts/poppins/Poppins-Light.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PoppinsRegular";
   src: url('../assets/interface/fonts/poppins/Poppins-Regular.ttf');
   font-style: normal;
   font-weight: normal;
@@ -18,7 +24,7 @@ html, body {
   margin: 0;
   top:0;
   bottom:0;
-  font-family : "Helvetica Neue"; 
+  font-family : "PoppinsLight", "Helvetica Neue"; 
   font-weight: lighter;
   letter-spacing: 2px;
   overflow-x: hidden;
@@ -32,7 +38,7 @@ html, body {
   background-size: 100% 100%;
 }
 
-.normalWeight { font-weight: normal; }
+.normalWeight { font-family : "PoppinsRegular"; }
 .biggerSubtitle { font-size: 2rem; color: #c9ab60; }
 .biggerText { font-size: 1.4rem; }
 
@@ -63,16 +69,16 @@ html, body {
 .chapter-page-project-title { padding: 35px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; font-size: 2.5rem; }
 .chapter-page-project-description { padding: 95px 0px 0px 0px; position: absolute; opacity: 0; left: 40%; }
 
-.chapter-page-leftProject { background-color: #083a34; background-image: url('../assets/mirage.jpg'); background-size: cover; margin-top: 190px; margin-left: 58%; transition: all 0.5s; }
+.chapter-page-leftProject { background-color: #083a34; background-size: cover; margin-top: 190px; margin-left: 58%; transition: all 0.5s; }
 
-.chapter-page-rightProject { background-color: #062b26; background-image: url('../assets/mirage2.jpg'); background-size: cover; border-left: solid #c9ab60 5px; margin-top: 100px; }
+.chapter-page-rightProject { background-color: #062b26; background-size: cover;/* border-left: solid #c9ab60 5px;*/ margin-top: 100px; transition: all 0.5s; }
 .chapter-page-rightProject-title { font-size: 2.2rem; }
 
 .chapter-page-nextChapter { margin-left: 50%; }
 .chapter-page-nextChapter-bar { border: solid white 1px; width: 200px; }
 .chapter-page-nextChapter-text { margin-top: 30px; cursor: pointer; width: 200px; text-align: center; }
 
-.statue { position: absolute; left: 50%; transform: translateX(-55%); bottom: -50px; }
+.statue { position: absolute; left: 50%; transform: translateX(-60%); bottom: -50px; }
 .statue img { width: 120%; height: auto; }
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
@@ -90,7 +96,7 @@ html, body {
   .chapter-page-rightProject-title { font-size: 1.8rem; }
   .chapter-page-leftProject { margin-top: 160px; }
   .chapter-page-rightProject { margin-top: 60px; }
-  .statue img { width: 110%; }
+  .statue img { width: 112%; }
 }
 
 @media screen and (max-width: 1000px), screen and (max-height: 740px) {

@@ -17,10 +17,12 @@ class Chapter {
         this.firstTextRightPart = document.querySelector('.chapter-page-firstText-rightPart')
         this.leftProjectTitle = document.querySelector('.chapter-page-leftProject-title')
         this.leftProjectDescription = document.querySelector('.chapter-page-leftProject-description')
+        this.leftProjectImg = document.querySelector('.chapter-page-leftProject')
         this.subtitle = document.querySelector('.chapter-page-subtitle')
         this.secondText = document.querySelector('.chapter-page-secondText')
         this.rightProjectTitle = document.querySelector('.chapter-page-rightProject-title')
-        this.rightProjectDescription = document.querySelector('.chapter-page-rightProject-description')        
+        this.rightProjectDescription = document.querySelector('.chapter-page-rightProject-description') 
+        this.rightProjectImg = document.querySelector('.chapter-page-rightProject')
         this.statue = document.querySelector('.statueImg')
         this.nextChapter = document.querySelector('.chapter-page-nextChapter-text')
 
@@ -39,10 +41,13 @@ class Chapter {
         this.firstTextRightPart.innerHTML = this.datas.firstTextRightPart
         this.leftProjectTitle.innerHTML = this.datas.leftProjectTitle
         this.leftProjectDescription.innerHTML = this.datas.leftProjectDescription
+        this.leftProjectImg.style.backgroundImage = this.datas.leftProjectImg
+
         this.subtitle.innerHTML = this.datas.subtitle
         this.secondText.innerHTML = this.datas.secondText
         this.rightProjectTitle.innerHTML = this.datas.rightProjectTitle
         this.rightProjectDescription.innerHTML = this.datas.rightProjectDescription
+        this.rightProjectImg.style.backgroundImage = this.datas.rightProjectImg
         this.statue.src = this.datas.statue
         this.nextChapter.innerHTML = this.datas.nextChapter
 
@@ -98,7 +103,7 @@ class Chapter {
             anime({
                 targets: this.rightProjectTitle,
                 opacity: [0, 1],
-                left: ['67%', '72%'],
+                left: ['62%', '67%'],
                 duration: 800,
                 easing: 'linear'
             })
@@ -106,7 +111,7 @@ class Chapter {
         anime({
             targets: this.rightProjectDescription,
             opacity: [0, 1],
-            left: ['83%', '78%'],
+            left: ['78%', '73%'],
             duration: 800,
             easing: 'linear'
         })

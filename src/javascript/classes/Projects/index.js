@@ -16,8 +16,9 @@ class Projects {
         this.projectDate = document.querySelector('.projectSelected-projectDate')
         this.projectRole = document.querySelector('.projectSelected-projectRole')
         this.projectTechno = document.querySelector('.projectSelected-projectTechno')
-        this.projectDescription = document.querySelector('.projectSelected-projectDescription')
         this.projectLink = document.querySelector('.projectSelected-projectLink')
+        this.projectDescription = document.querySelector('.projectSelected-projectDescription')
+        this.projectImg = document.querySelector('.projectSelected')
 
 		this.init()
     }
@@ -35,6 +36,7 @@ class Projects {
 		this.datas.forEach((project) => {
       		let newProject = document.createElement("div")
       		newProject.classList.add("projectsList-project")
+          newProject.style.backgroundImage = project.img
 
       		let newTitle = document.createElement("div")
       		newTitle.innerHTML = project.title
@@ -59,8 +61,9 @@ class Projects {
       project.date != undefined ? this.projectDate.innerHTML = project.date : this.projectDate.innerHTML = ''
       project.role != undefined ? this.projectRole.innerHTML = project.role : this.projectRole.innerHTML = ''
       project.techno != undefined ? this.projectTechno.innerHTML = project.techno : this.projectTechno.innerHTML = ''
-      project.description != undefined ? this.projectDescription.innerHTML = project.description : this.projectDescription.innerHTML = ''
       project.link != undefined ? this.projectLink.innerHTML = project.link : this.projectLink.innerHTML = ''
+      project.description != undefined ? this.projectDescription.innerHTML = project.description : this.projectDescription.innerHTML = ''
+      project.img != undefined ? this.projectImg.style.backgroundImage = project.img : this.projectImg.style.backgroundImage = ''
 
       if ( this.oldProjectSelected != project ) {
         this.oldProjectSelected = project
