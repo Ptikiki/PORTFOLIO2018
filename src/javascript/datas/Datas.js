@@ -76,30 +76,6 @@ const webProjects = [
 		description : 'Projet de développement d\'une application mobile dynamique au service du divertissement de ses utilisateurs, en manque d\'inspiration pour s\'occuper. La Shakin\'BOX propose aléatoirement ou non (selon la volonté de l\'utilisateur) différents choix d\'activités originales et réalisables selon le contexte précisé. Le résultat apparaît après un "shake" du téléphone, un mouvement qui a donné son nom à  l\'application.',
 		link : "http://www.shakinbox.com/",
 		img : "url('assets/projects/shakinbox.jpg')"
-	},
-	{
-		title : "Projet",
-		date : "date",
-		role : "role",
-		techno : "techno",
-		description : "un super projet",
-		img : "url('assets/projects/versailles.jpg')"
-	},
-	{
-		title : "Projet",
-		date : "date",
-		role : "role",
-		techno : "techno",
-		description : "un super projet",
-		img : "url('assets/projects/versailles.jpg')"
-	},
-	{
-		title : "Projet",
-		date : "date",
-		role : "role",
-		techno : "techno",
-		description : "un super projet",
-		img : "url('assets/projects/versailles.jpg')"
 	}
 ]
 

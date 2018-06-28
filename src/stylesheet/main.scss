@@ -51,9 +51,10 @@ html, body {
 .menu { width: 50%; height: 80px; }
 .logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; font-family: "SD Georgia Light"; }
 .burger { float: right; margin-right: 20px; line-height: 80px; cursor: pointer; }
-.burger img { width: 30px; }
+.burger img { width: 30px; transition: all 0.5s ease-out; }
 .cross { float: right; margin-right: 20px; line-height: 80px; display: none; cursor: pointer; }
-.cross img { width: 30px; }
+.cross img { width: 30px; transition: all 0.5s ease-out; }
+.burger img:hover, .cross img:hover { transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transition: all 0.5s ease-out; }
 
 .container { height: 100%; padding: 0px 100px 100px 100px; }
 
@@ -110,6 +111,7 @@ html, body {
   .logo { margin-left: 100px; font-size: 2.5rem; line-height: 70px; }
   .container { padding: 0px 5% 10% 5%; }
   .chapter-page-text { font-size: 0.9rem; line-height: 1.3rem; padding: 9% 9% 9% 9%; }
+  .firstLetter { font-size: 3.1rem; width: 40px; height: 30px; }
   .chapter-page-title { font-size: 3.5rem; line-height: 3.5rem; padding: 9% 9% 0px 9%; }
   .chapter-page-subtitle { font-size: 1.1rem; line-height: 1.7rem; padding: 9% 9% 0px 9%; }
   .chapter-page-project-title { font-size: 2rem; }
