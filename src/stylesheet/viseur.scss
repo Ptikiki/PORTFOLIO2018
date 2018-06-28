@@ -1,0 +1,20 @@
+.viseur_container { background-color: black; width: 100%; height: 100%; position: absolute; z-index: 10; /*font-family : "PoppinsLight";*/ }
+
+#box { background-image: url('../assets/viseur/fond_rodo_new.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;  width: 100vw; height: 100vh; position: relative; overflow: hidden; }
+
+#fond_tmp { -webkit-transition: all 0.8s; transition: all 0.8s; background-image: url('../assets/viseur/fond_rodo_flou_new.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100vw; height: 100vh; }
+#voie_lactee img { width: 100vw; height: 100vh; margin: auto; position: absolute; z-index: 1; top : 0; left: 0; }
+
+.layer { position: absolute; display: block; }
+#l1 { z-index: 4; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-51%) translateY(-54%); -ms-transform: translateX(-51%) translateY(-54%); }
+#l1 img { width : 90%; }
+
+#l2 { z-index: 3; top: 51%; left: 52%; transform: translateX(-51%) translateY(-52%); -webkit-transform: translateX(-51%) translateY(-54%); -ms-transform: translateX(-51%) translateY(-54%);}
+#l2 img { width : 75%; }
+
+#l3 { z-index: 2; top: 51%; left: 54%; transform: translateX(-51%) translateY(-54%); -webkit-transform: translateX(-51%) translateY(-54%); -ms-transform: translateX(-51%) translateY(-54%); }
+#l3 img { width : 55%; }
+
+#center_circle { z-index: 5; left: 55%; top : 50%; transform: translateX(-55%) translateY(-50%); -webkit-transform: translateX(-55%) translateY(-50%); -ms-transform: translateX(-55%) translateY(-50%); opacity: 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
+#center_circle img { width : 52%; }
+#center_circle a { color: #ffa421; font-size: 1.8rem; position: absolute; z-index: 50; left: 25%; top : 50%; transform: translateX(-35%) translateY(-50%); -ms-transform: translateX(-35%) translateY(-50%); -webkit-transform: translateX(-35%) translateY(-50%); text-decoration: none; }
