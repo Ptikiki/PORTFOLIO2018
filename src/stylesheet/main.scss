@@ -152,6 +152,7 @@ html, body {
 @media screen and (max-width: 800px), screen and (max-height: 650px) {
   body { overflow-y: initial; }
   .logo { margin-left: 40px; }
+  .chapter-page-title { font-size: 2.5rem; line-height: 2.5rem; }
 
   .chapter-page-text-part { width : 100%; }
   .chapter-page-firstText-leftPart { float: initial; }
@@ -166,7 +167,8 @@ html, body {
   .chapter-page-leftProject { margin-top: 0px; margin: 0% 10% 10% 7%; }
   .chapter-page-rightProject { margin-top: 20px; margin: 10% 10% 0% 54%; }
 
-  .chapter-page-project-title { display: none; }
+  .chapter-page-project-title { font-size: 1.2rem; }
+  .chapter-page-rightProject-title { padding: 28px 50px 0px 0px; }
   .chapter-page-project-description { display: none; }
 
   .chapter-page-nextChapter { text-align: center;}

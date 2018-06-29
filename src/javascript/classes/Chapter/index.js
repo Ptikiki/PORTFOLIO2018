@@ -27,6 +27,7 @@ class Chapter {
         this.nextChapter = document.querySelector('.chapter-page-nextChapter-text')
 
 		this.init()
+        this.onChapterResize()
         this.animeSubtitles()
     }
 
@@ -59,6 +60,7 @@ class Chapter {
     }
 
     bind = () => {
+        window.addEventListener('resize', this.onChapterResize)
         this.nextChapter.addEventListener('click', this.nextChapterClick)
         document.querySelector(".chapter-page-leftProject").addEventListener('mouseover', this.leftProjectOver)
     	document.querySelector(".chapter-page-rightProject").addEventListener('mouseover', this.rightProjectOver)
@@ -143,7 +145,21 @@ class Chapter {
         })
     }
 
+    onChapterResize = (event) => {
+        if ( window.innerWidth <= 800 || window.innerHeight <= 650 ) {
+            document.querySelector(".chapter-page-leftProject").removeEventListener('mouseover', this.leftProjectOver)
+            document.querySelector(".chapter-page-leftProject-title").style.opacity = 1
+            document.querySelector(".chapter-page-rightProject").removeEventListener('mouseover', this.rightProjectOver)
+            document.querySelector(".chapter-page-rightProject-title").style.opacity = 1
+        } 
+        else { 
+            document.querySelector(".chapter-page-leftProject").addEventListener('mouseover', this.leftProjectOver)
+            document.querySelector(".chapter-page-leftProject-title").style.opacity = 0
 
+            document.querySelector(".chapter-page-rightProject").addEventListener('mouseover', this.rightProjectOver)
+            document.querySelector(".chapter-page-rightProject-title").style.opacity = 0
+        }
+    }
 
 }
 

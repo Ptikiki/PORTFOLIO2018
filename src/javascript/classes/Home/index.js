@@ -72,6 +72,7 @@ class Home {
             this.webProjectsList = false
         }
 
+        Storage.ProjectsClass.onProjectsResize()
         document.querySelectorAll(".projectsList-project").forEach((project, index) => {
             anime({
                 targets: project,
@@ -108,7 +109,7 @@ class Home {
         this.statue.style.display = "block"
         document.querySelector('.page-leftContainer').style.display = "block" 
 
-        
+
         document.querySelector('.cross').removeEventListener('click', this.crossClicked)
         window.removeEventListener('resize', Storage.ProjectsClass.onProjectsResize)
 
