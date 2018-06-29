@@ -10,6 +10,7 @@ class Home {
         this.projectSelection = document.querySelector('.projectSelection')
         this.projectsList = document.querySelector('.projectsList')
         this.projectSelected = document.querySelector('.projectSelected')
+        this.projectImg = document.querySelector('.page-leftContainer')
 
         this.burger = document.querySelector('.burger')
         this.title = document.querySelector('.chapter-page-title')
@@ -98,6 +99,8 @@ class Home {
         this.projectSelection.style.display = "none"
         this.projectsList.style.display = "none"
         this.projectSelected.style.display = "none"
+        this.projectImg.style.backgroundImage = ''
+
 
         this.burger.style.display = "block"
         this.title.style.display = "block"

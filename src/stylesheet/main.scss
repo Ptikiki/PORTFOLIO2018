@@ -59,7 +59,7 @@ html, body {
 .container { height: 100%; padding: 0px 100px 100px 100px; }
 
 .page-container { width: 50%; height: 100%; text-align: justify; }
-.page-leftContainer { float: left; background-color: #062b26; }
+.page-leftContainer { float: left; background-color: #062b26; background-size: cover; }
 .page-rightContainer { float: right; background-color: #083a34; }
 
 .chapter-page-text { font-size: 1.1rem; line-height: 1.7rem; padding: 100px 100px 100px 100px;  }
@@ -136,7 +136,6 @@ html, body {
   .chapter-page-rightProject-title { font-size: 1.6rem; }
   .chapter-page-nextChapter-text { margin-top: 15px; }
   .statue img { width: 100%; }
-
 }
 
 @media screen and (max-width: 1100px), screen and (max-height: 700px) {
