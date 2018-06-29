@@ -150,19 +150,24 @@ html, body {
 
 /* MOBILE */
 @media screen and (max-width: 800px), screen and (max-height: 650px) {
-  .chapter-page-project { display: none; }
-  .biggerSubtitle { font-size: 1rem; }
-  .biggerText { font-size: 0.7rem; }
-  .chapter-page-text { font-size: 0.5rem; line-height: 0.9rem; }
-  .chapter-page-title { font-size: 2rem; line-height: 2rem; }
-  .chapter-page-subtitle { font-size: 0.7rem; line-height: 1rem; text-align: left; }
-
-  .chapter-page-nextChapter { margin-left: 35%; margin-top: 8px; }
-  .chapter-page-nextChapter-bar { width: 100px; }
-  .chapter-page-nextChapter-text { font-size: 0.6rem; margin-top: 8px; width: 100px; }
+  body { overflow-y: initial; }
+  .logo { margin-left: 40px; }
 
   .chapter-page-text-part { width : 100%; }
   .chapter-page-firstText-leftPart { float: initial; }
   .chapter-page-firstText-rightPart { float: initial; }
   .chapter-page-secondText { margin-left: 0px; }
+
+  .page-container { width: 100%; height: 100%; }
+  .page-leftContainer { float: initial; }
+  .page-rightContainer { float: initial; }
+
+  .chapter-page-project { height: 100px; }
+  .chapter-page-leftProject { margin-top: 0px; margin: 0% 10% 10% 7%; }
+  .chapter-page-rightProject { margin-top: 20px; margin: 10% 10% 0% 54%; }
+
+  .chapter-page-project-title { display: none; }
+  .chapter-page-project-description { display: none; }
+
+  .chapter-page-nextChapter { text-align: center;}
 }

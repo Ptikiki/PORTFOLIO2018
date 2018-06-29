@@ -47,10 +47,6 @@ class Home {
     projectsClicked = (projectType) => {
         let that = this 
 
-        document.querySelector('.cross').addEventListener('click', this.crossClicked)
-        document.querySelector('.burger').removeEventListener('click', function(){ that.projectsClicked("web") })
-        document.querySelector('.chapter-page-leftProject').removeEventListener('click', function(){ that.projectsClicked("writing") })
-
         this.burger.style.display = "none"
         this.title.style.display = "none"
         this.subtitle.style.display = "none"
@@ -85,22 +81,21 @@ class Home {
                 easing: 'linear'
             })
         })
+
+        document.querySelector('.cross').addEventListener('click', this.crossClicked)
+        document.querySelector('.burger').removeEventListener('click', function(){ that.projectsClicked("web") })
+        document.querySelector('.chapter-page-leftProject').removeEventListener('click', function(){ that.projectsClicked("writing") })
+        window.addEventListener('resize', Storage.ProjectsClass.onProjectsResize)
 	}
 
     crossClicked = (event) => {
         let that = this
 
-        document.querySelector('.cross').removeEventListener('click', this.crossClicked)
-        document.querySelector('.burger').addEventListener('click', function(){ that.projectsClicked("web") })
-        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ 
-            if (Storage.ChapterClass.chapterNumber === 1)  { that.projectsClicked("writing") }
-        })
         this.cross.style.display = "none"
         this.projectSelection.style.display = "none"
         this.projectsList.style.display = "none"
         this.projectSelected.style.display = "none"
         this.projectImg.style.backgroundImage = ''
-
 
         this.burger.style.display = "block"
         this.title.style.display = "block"
@@ -111,6 +106,16 @@ class Home {
         this.rightProject.style.display = "block"
         this.nextChapter.style.display = "block"
         this.statue.style.display = "block"
+        document.querySelector('.page-leftContainer').style.display = "block" 
+
+        
+        document.querySelector('.cross').removeEventListener('click', this.crossClicked)
+        window.removeEventListener('resize', Storage.ProjectsClass.onProjectsResize)
+
+        document.querySelector('.burger').addEventListener('click', function(){ that.projectsClicked("web") })
+        document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ 
+            if (Storage.ChapterClass.chapterNumber === 1)  { that.projectsClicked("writing") }
+        })
     }
 }
 

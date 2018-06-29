@@ -21,10 +21,12 @@ class Projects {
     this.projectImg = document.querySelector('.page-leftContainer')
 
     this.init()
+    this.bind()
   }
 
   init() {
   	this.projectsList.innerHTML = ""
+    this.onProjectsResize()
     this.createList()
 	}
 
@@ -71,6 +73,19 @@ class Projects {
         duration: 600,
         easing: 'linear'
       })
+    }
+  }
+
+  bind = () => {
+    window.addEventListener('resize', this.onProjectsResize)
+  }
+
+  onProjectsResize = (event) => {
+    if ( window.innerWidth <= 800 || window.innerHeight <= 650 ) {
+      document.querySelector('.page-leftContainer').style.display = "none"
+    } 
+    else { 
+      document.querySelector('.page-leftContainer').style.display = "block" 
     }
   }
 }

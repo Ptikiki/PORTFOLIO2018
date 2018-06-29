@@ -46,9 +46,6 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 800px), screen and (max-height: 650px) {
-	.projectSelected-projectDescription { height: 45vh; }
-	.projectSelection { font-size: 1.3rem; }
-	.projectsList-projectTitle { padding: 10px 10px 0px 10px; font-size: 0.9rem; }
-	.projectsList-projectDate { display: none; }
-}
+/*@media screen and (max-width: 800px), screen and (max-height: 650px) {
+	.page-leftContainer { display: none; }
+}*/
