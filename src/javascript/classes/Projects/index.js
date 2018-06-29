@@ -51,6 +51,7 @@ class Projects {
   		this.projectsList.appendChild(newProject).appendChild(newTitle).appendChild(newDate)  
 
   		newProject.addEventListener('mouseover', function(){ that.projectOver(project) })
+      newProject.addEventListener('click', function(){ that.projectClickMobile(project) })
   	})
 	}
 
@@ -74,6 +75,24 @@ class Projects {
         easing: 'linear'
       })
     }
+  }
+
+  projectClickMobile = (project) => {
+    if ( window.innerWidth <= 800 || window.innerHeight <= 650 ) {
+      document.querySelector('.page-leftContainer').style.display = "block" 
+      document.querySelector('.page-rightContainer').style.display = "none" 
+
+      document.querySelector('.cross').removeEventListener('click', Storage.HomeClass.crossClicked)
+      document.querySelector('.cross').addEventListener('click', this.crossClickedMobile)
+    }
+  }
+
+  crossClickedMobile = (event) => {
+    document.querySelector('.page-leftContainer').style.display = "none" 
+    document.querySelector('.page-rightContainer').style.display = "block" 
+
+    document.querySelector('.cross').addEventListener('click', Storage.HomeClass.crossClicked)
+    document.querySelector('.cross').removeEventListener('click', this.crossClickedMobile)
   }
 
   bind = () => {
