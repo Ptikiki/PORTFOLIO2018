@@ -27,6 +27,7 @@ class Chapter {
         this.nextChapter = document.querySelector('.chapter-page-nextChapter-text')
 
 		this.init()
+        this.animeSubtitles()
     }
 
     init() {
@@ -116,6 +117,33 @@ class Chapter {
             easing: 'linear'
         })
     }
+
+    animeSubtitles = () => {
+        let quote = document.querySelector(".biggerSubtitle")
+        quote.innerText.replace(/(<([^>]+)>)/ig,"")
+        let quotewords = quote.innerText.split(" ")
+        let wordCount = quotewords.length
+        quote.innerHTML = ""
+
+        for (let i=0; i < wordCount; i++) {
+            quote.innerHTML += "<span>"+quotewords[i]+"</span>"
+            i < quotewords.length - 1 ? quote.innerHTML += " " : ''
+        }
+
+        quotewords = document.querySelectorAll(".biggerSubtitle span")
+        
+        Array.prototype.forEach.call(quotewords, function(word, index) {
+            anime({
+                targets: word,
+                opacity: [0, 1],
+                duration: 500,
+                delay: index*300,
+                easing: 'linear'
+            })
+        })
+    }
+
+
 
 }
 

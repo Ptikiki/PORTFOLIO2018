@@ -18,7 +18,7 @@ const chapter1 = {
 const chapter2 = {
 	title: "Chapitre 2 <br> Cursus",
 	firstLetter: "A",
-	firstTextLeftPart: "près obtention d'un bac scientifique, je me suis orientée vers un DUT MMI, ou <span class='biggerText normalWeight'>Métiers du Multimédia et de l’Internet</span>. ",
+	firstTextLeftPart: "près obtention d'un bac scientifique, je me suis orientée vers un DUT MMI, ou <span class='biggerText normalWeight'>Métiers</span> du <span class='biggerText normalWeight'>Multimédia</span> et de <span class='biggerText normalWeight'>l’Internet</span>. ",
 	firstTextRightPart: "C'est alors que j’ai développé mes premières compétences dans le web, et notamment en développement et <span class='biggerText normalWeight'>management</span>.",
 	leftProjectTitle: "Shakin'BOX",
 	leftProjectDescription: "Application mobile",

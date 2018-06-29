@@ -13,7 +13,8 @@
 .projectSelected-projectDate { font-size: 2rem; font-family : "PoppinsLight"; }
 .projectSelected-projectRole { font-size: 1.8rem; margin-top: 5%; font-family : "PoppinsLight"; }
 .projectSelected-projectTechno { font-size: 1.5rem; margin-top: 5%; }
-.projectSelected-projectLink { font-size: 1.1rem; margin-top: 5%; color: #c9ab60; }
+.projectSelected-projectLink { font-size: 1.1rem; margin-top: 5%; color: #c9ab60; cursor: pointer; transition: all 0.5s; }
+.projectSelected-projectLink:hover { letter-spacing: 3px; }
 .projectSelected-projectDescription { font-size: 1rem; line-height: 1.4rem; margin-top: 8%; text-align: justify; overflow-y: auto; height: 53vh; width: 100%; }
 .projectSelected-projectDescription::-webkit-scrollbar, { width: 0px; background: transparent; }
 
