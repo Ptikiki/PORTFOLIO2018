@@ -18,3 +18,7 @@
 #center_circle { z-index: 5; left: 55%; top : 50%; transform: translateX(-55%) translateY(-50%); -webkit-transform: translateX(-55%) translateY(-50%); -ms-transform: translateX(-55%) translateY(-50%); opacity: 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
 #center_circle img { width : 52%; }
 #center_circle a { color: #ffa421; font-size: 1.8rem; position: absolute; z-index: 50; left: 25%; top : 50%; transform: translateX(-35%) translateY(-50%); -ms-transform: translateX(-35%) translateY(-50%); -webkit-transform: translateX(-35%) translateY(-50%); text-decoration: none; }
+
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
+	.viseur_container { display: none; }
+}
