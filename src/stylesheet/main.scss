@@ -92,8 +92,6 @@ html, body {
 
 
 @media screen and (max-height: 1000px) {
-/*  body { border: solid green; }
-*/    
   .biggerSubtitle { font-size: 1.8rem; }
   .biggerText { font-size: 1.3rem; }
 
@@ -106,8 +104,6 @@ html, body {
 }
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
-/*  body { border: solid red; }
-*/  
   .biggerSubtitle { font-size: 1.6rem; }
   .menu { height: 70px; }
   .logo { margin-left: 90px; font-size: 2.5rem; line-height: 70px; }
@@ -124,8 +120,6 @@ html, body {
 }
 
 @media screen and (max-width: 1250px), screen and (max-height: 840px) {
-/*  body { border: solid blue; }
-*/  
   .logo { margin-left: 70px; }
   .biggerSubtitle { font-size: 1.3rem; }
   .biggerText { font-size: 1.1rem; }
@@ -139,8 +133,6 @@ html, body {
 }
 
 @media screen and (max-width: 1100px), screen and (max-height: 700px) {
-/*  body { border: solid red; }
-*/
   .logo { margin-left: 50px; }
 
   .biggerSubtitle { font-size: 1.3rem; }
@@ -156,19 +148,16 @@ html, body {
   .statue { display: none; }
 }
 
- /*MOBILE*/
-@media screen and (max-width: 800px), screen and (max-height: 700px) {
-/*  body { border: solid blue; }
-*/
+/* MOBILE */
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
   .chapter-page-project { display: none; }
-
   .biggerSubtitle { font-size: 1rem; }
   .biggerText { font-size: 0.7rem; }
   .chapter-page-text { font-size: 0.5rem; line-height: 0.9rem; }
   .chapter-page-title { font-size: 2rem; line-height: 2rem; }
-  .chapter-page-subtitle { font-size: 0.7rem; line-height: 1rem; }
+  .chapter-page-subtitle { font-size: 0.7rem; line-height: 1rem; text-align: left; }
 
-  .chapter-page-nextChapter { margin-left: 40%; margin-top: 8px; }
+  .chapter-page-nextChapter { margin-left: 35%; margin-top: 8px; }
   .chapter-page-nextChapter-bar { width: 100px; }
   .chapter-page-nextChapter-text { font-size: 0.6rem; margin-top: 8px; width: 100px; }
 
