@@ -60,7 +60,7 @@ const webProjects = [
 		date : "2017",
 		role : "Conceptrice | Développeuse",
 		techno : "Three.js, Webpack, Github",
-		description : "Projet Gobelins réalisé en collaboration avec le studio de production musicale Astérios. Trouvez l'accord qui vous permettra de déverrouiller la mystérieuse boîte à musique et découvrez ce qui s'y cache.",
+		description : "Projet Gobelins réalisé en collaboration avec le studio de production musicale Astérios. Trouvez l'accord qui vous permettra de déverrouiller la mystérieuse boîte à musique, et découvrez ce qui s'y cache.",
 		link : "http://projets.gobelins.fr/dmii/2019/arpegia/",
 		img : "url('assets/projects/arpegia.jpg')"
 	},
