@@ -49,8 +49,6 @@ class Home {
 
     logoClicked = () => {
         if ( this.logoClicked != true ) {
-            document.querySelector('.page-leftContainer').style.display = "none"
-            document.querySelector('.page-rightContainer').style.display = "none"
             anime({
                 targets: this.about,
                 left: ['-100vw', '5vw'],
@@ -60,8 +58,6 @@ class Home {
             this.logoClicked = true
         }
         else if ( this.logoClicked === true ) {
-            document.querySelector('.page-leftContainer').style.display = "block"
-            document.querySelector('.page-rightContainer').style.display = "block"
             anime({
                 targets: this.about,
                 left: ['5vw', '-100vw'],

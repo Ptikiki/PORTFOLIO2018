@@ -1,4 +1,4 @@
-.about-container { position: absolute; width: 90%; height: 100%; background-color: #062b26; text-align: center; left: -100vw; }
+.about-container { position: absolute; width: 90%; height: 100%; background-color: #062b26; text-align: center; left: -100vw; top: 80px; }
 
 .about-container h1 { color: #c9ab60; }
 .name { margin-top : 80px; font-size: 3rem; }
@@ -7,14 +7,14 @@
 .contact-text { text-align: right; margin : 100px; }
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
-	body { font-size: 90%; }
+	.about-container { font-size: 90%; top: 70px; }
 	.name { margin-top : 50px; }
 	.about-text, .contact-text { margin : 70px; }
 }
 
 /* MOBILE */
 @media screen and (max-width: 800px), screen and (max-height: 800px) {
-	body { font-size: 70%; }
+	.about-container { font-size: 70%; }
 	.name { margin-top : 30px; font-size: 1.8rem; }
 	.about-text, .contact-text { margin : 40px; }
 }
