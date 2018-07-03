@@ -1,4 +1,4 @@
-.about-container { position: absolute; width: 90%; height: 100%; background-color: #062b26; text-align: center; left: -100vw; top: 80px; }
+.about-container { position: absolute; width: 90%; background-color: #062b26; text-align: center; left: -100vw; top: 80px; height: 100%; }
 
 .about-container h1 { color: #c9ab60; }
 .name { margin-top : 80px; font-size: 3rem; }
@@ -14,7 +14,7 @@
 
 /* MOBILE */
 @media screen and (max-width: 800px), screen and (max-height: 800px) {
-	.about-container { font-size: 70%; }
+	.about-container { font-size: 70%; height: initial; }
 	.name { margin-top : 30px; font-size: 1.8rem; }
 	.about-text, .contact-text { margin : 40px; }
 }
