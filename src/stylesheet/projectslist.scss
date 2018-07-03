@@ -44,3 +44,20 @@
 	.projectsList-projectTitle { padding: 15px 15px 0px 15px; font-size: 1.1rem; }
 	.projectsList-projectDate { padding: 10px 0px 0px 70px; font-size: 1rem; }
 }
+
+/* MOBILE */
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
+	.projectSelected { padding: 30px; }
+	.projectSelected-projectTitle { font-size: 2rem; }
+	.projectSelected-projectDate { font-size: 1.1rem; }
+	.projectSelected-projectRole { font-size: 1rem; }
+	.projectSelected-projectLink { font-size: 0.9rem; }
+	.projectSelected-projectTechno { font-size: 0.8rem; }
+	.projectSelected-projectDescription { height: 60vh; }
+}
+@media screen and (max-height: 520px) {
+	.projectSelected { padding: 20px; }
+	.projectSelected-projectTitle { font-size: 1.7rem; }
+	.projectSelected-projectDate { font-size: 1rem; }
+	.projectSelected-projectDescription { height: 55vh; }
+}
