@@ -22,6 +22,8 @@ class Home {
         this.nextChapter = document.querySelector('.chapter-page-nextChapter')
         this.statue = document.querySelector('.statueImg')
 
+        this.about = document.querySelector('.about-container')
+
 		this.init()
     }
 
@@ -32,6 +34,7 @@ class Home {
     bind = () => {
         let that = this
 
+        document.querySelector('.logo').addEventListener('click', that.logoClicked)
         document.querySelector('.burger').addEventListener('click', function(){ that.projectsClicked("web") })
         document.querySelector('.chapter-page-leftProject').addEventListener('click', function(){ 
             if (Storage.ChapterClass.chapterNumber === 1)  { that.projectsClicked("writing") }
@@ -42,6 +45,27 @@ class Home {
         let that = this
         document.querySelector('.burger').removeEventListener('click', function(){ that.projectsClicked("web") })
         document.querySelector('.chapter-page-leftProject').removeEventListener('click', function(){ that.projectsClicked("writing") })
+    }
+
+    logoClicked = () => {
+        if ( this.logoClicked != true ) {
+            anime({
+                targets: this.about,
+                left: ['-100vw', '5vw'],
+                duration: 700,
+                easing: 'easeOutQuart'
+            }) 
+            this.logoClicked = true
+        }
+        else if ( this.logoClicked === true ) {
+            anime({
+                targets: this.about,
+                left: ['5vw', '-100vw'],
+                duration: 700,
+                easing: 'easeInQuart'
+            }) 
+            this.logoClicked = false
+        }
     }
 
     projectsClicked = (projectType) => {

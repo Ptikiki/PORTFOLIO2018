@@ -51,7 +51,7 @@ a { color: white; text-decoration: none; }
 .biggerText { font-size: 1.4rem; }
 
 .menu { width: 50%; height: 80px; }
-.logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; font-family: "SD Georgia Light"; }
+.logo { float: left; margin-left: 120px; font-size: 3rem; line-height: 80px; font-family: "SD Georgia Light"; cursor: pointer; }
 .burger { float: right; margin-right: 20px; line-height: 80px; cursor: pointer; }
 .burger img { width: 30px; transition: all 0.5s ease-out; }
 .cross { float: right; margin-right: 20px; line-height: 80px; display: none; cursor: pointer; }

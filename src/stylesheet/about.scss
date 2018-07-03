@@ -1,0 +1,17 @@
+.about-container { position: absolute; width: 90%; height: 100%; background-color: #062b26; text-align: center; left: -100vw; }
+
+.about-container h1 { color: #c9ab60; }
+.name { margin-top : 80px; font-size: 3rem; }
+
+.about-text { text-align: left; margin : 100px; }
+.contact-text { text-align: right; margin : 100px; }
+
+@media screen and (max-width: 1600px), screen and (max-height: 900px) {
+	.name { margin-top : 50px; }
+	.about-text, .contact-text { margin : 70px; }
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
+
+}
