@@ -42,7 +42,7 @@ const webProjects = [
 		date : "2018",
 		role : "Conceptrice | Rédactrice | Développeuse",
 		techno : "Three.js, Webpack, Github",
-		description : "Projet Gobelins",
+		description : "Projet Gobelins réalisé en étroite collaboration avec l'Agence France Presse, MIRAGE ! s'attache à démontrer la nécessité de s’intéresser à l’information fiable pour éviter les conséquences parfois dramatiques de sa manipulation.",
 		link : "http://aliciabaudry.com/afp/build/",
 		img : "url('assets/projects/mirage.jpg')"
 	},
@@ -51,7 +51,8 @@ const webProjects = [
 		date : "2017",
 		role : "Conceptrice | Développeuse",
 		techno : "Three.js, Webpack",
-		description : "Projet personnel",
+		description : "Projet personnel permettant de visiter les jardins du Château de Versailles depuis son fauteuil.",
+		link : "http://aliciabaudry.com/api_audio/api_audio_versailles.php",
 		img : "url('assets/projects/versailles.jpg')"
 	},
 	{
@@ -59,7 +60,7 @@ const webProjects = [
 		date : "2017",
 		role : "Conceptrice | Développeuse",
 		techno : "Three.js, Webpack, Github",
-		description : "Projet Gobelins",
+		description : "Projet Gobelins réalisé en collaboration avec le studio de production musicale Astérios. Trouvez l'accord qui vous permettra de déverrouiller la mystérieuse boîte à musique et découvrez ce qui s'y cache.",
 		link : "http://projets.gobelins.fr/dmii/2019/arpegia/",
 		img : "url('assets/projects/arpegia.jpg')"
 	},
@@ -68,7 +69,7 @@ const webProjects = [
 		date : "2017",
 		role : "Conceptrice | Développeuse",
 		techno : "PIXI.JS, Webpack, Github",
-		description : "Projet Gobelins",
+		description : 'Projet Gobelins répondant au sujet "Réenchanter le monde". Ce parcours initiatique vous invite à suivre le cheminement de Sum, petit homme peu sûr de lui qui développe sa confiance au fil de trois chapitres.',
 		link : "http://guyonmelina.fr/projets/sum/",
 		img : "url('assets/projects/sum.jpg')"
 	},
