@@ -63,6 +63,7 @@ class Projects {
     project.role != undefined ? this.projectRole.innerHTML = project.role : this.projectRole.innerHTML = ''
     project.techno != undefined ? this.projectTechno.innerHTML = project.techno : this.projectTechno.innerHTML = ''
     project.link != undefined ? this.projectLink.innerHTML = project.link : this.projectLink.innerHTML = ''
+    project.link != undefined ? document.querySelector(".projectSelected-projectLink-a").setAttribute("href", project.link) : document.querySelector(".projectSelected-projectLink-a").setAttribute("href", "")
     project.description != undefined ? this.projectDescription.innerHTML = project.description : this.projectDescription.innerHTML = ''
     project.img != undefined ? this.projectImg.style.backgroundImage = project.img : this.projectImg.style.backgroundImage = ''
 

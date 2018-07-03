@@ -6,11 +6,13 @@ const chapter1 = {
 	leftProjectTitle: "Mes écrits",
 	leftProjectDescription: "Contes, poèmes, romans...",
 	leftProjectImg: "url('assets/projects/anne.jpg')",
+	leftProjectLink: "#",
 	subtitle: "En grandissant, j’ai développé une grande fascination pour <span class='biggerSubtitle normalWeight'>l’Histoire de France</span>, et certains de ses événements en particulier.",
 	secondText: "Le mythe du <span class='biggerText normalWeight'>château de Versailles</span> en fait partie, par la majestuosité du bâtiment et la singularité des intrigues qui s’y sont déroulées. J’avais donc à coeur de réaliser une première ébauche de projet exposant la beauté du lieu, et notamment celle des jardins du palais.",
 	rightProjectTitle: "Les jardins de Versailles",
 	rightProjectDescription: "Visite virtuelle",
 	rightProjectImg: "url('assets/projects/versailles.jpg')",
+	rightProjectLink: "http://aliciabaudry.com/api_audio/api_audio_versailles.php",
 	statue: "assets/interface/statue.png",
 	nextChapter: "Chapitre II"
 }
@@ -23,11 +25,13 @@ const chapter2 = {
 	leftProjectTitle: "Shakin'BOX",
 	leftProjectDescription: "Application mobile",
 	leftProjectImg: "url('assets/projects/shakinbox.jpg')",
+	leftProjectLink: "http://www.shakinbox.com/",
 	subtitle: "Ma passion pour la culture et la découverte du monde du multimédia m'ont ainsi offert mon projet professionnel actuel : travailler à la mise en oeuvre de <span class='biggerSubtitle normalWeight'>dispositifs culturels immersifs</span> qui placent l'utilisateur au coeur de son expérience.",
 	secondText: "Le mastère en développement et design interactif proposé par <span class='biggerText normalWeight'>l'Ecole des Gobelins</span> constituait ainsi le cursus idéal pour moi. J'y ai réalisé plusieurs projets pour lesquels j'avais en charge la <span class='biggerText normalWeight'>conception/rédaction</span> des contenus et le développement.",
 	rightProjectTitle: "MIRAGE !",
 	rightProjectDescription: "Expérience immersive",	
 	rightProjectImg: "url('assets/projects/mirage.jpg')",
+	rightProjectLink: "http://aliciabaudry.com/afp/build/",
 	statue: "assets/interface/statue.png",
 	nextChapter: "Chapitre I"
 }

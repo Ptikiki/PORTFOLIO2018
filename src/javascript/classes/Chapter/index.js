@@ -44,12 +44,15 @@ class Chapter {
         this.leftProjectTitle.innerHTML = this.datas.leftProjectTitle
         this.leftProjectDescription.innerHTML = this.datas.leftProjectDescription
         this.leftProjectImg.style.backgroundImage = this.datas.leftProjectImg
+        document.querySelector(".chapter-page-leftProject a").setAttribute("href", this.datas.leftProjectLink)
 
         this.subtitle.innerHTML = this.datas.subtitle
         this.secondText.innerHTML = this.datas.secondText
         this.rightProjectTitle.innerHTML = this.datas.rightProjectTitle
         this.rightProjectDescription.innerHTML = this.datas.rightProjectDescription
         this.rightProjectImg.style.backgroundImage = this.datas.rightProjectImg
+        document.querySelector(".chapter-page-rightProject a").setAttribute("href", this.datas.rightProjectLink)
+
         this.statue.src = this.datas.statue
         this.nextChapter.innerHTML = this.datas.nextChapter
 
