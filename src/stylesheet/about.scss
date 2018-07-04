@@ -13,7 +13,7 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 800px), screen and (max-height: 800px) {
+@media screen and (max-width: 800px), screen and (max-height: 650px) {
 	.about-container { font-size: 70%; height: initial; }
 	.name { margin-top : 30px; font-size: 1.8rem; }
 	.about-text, .contact-text { margin : 40px; }
